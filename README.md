@@ -1,7 +1,7 @@
 # 李峋同款爱心代码
 
 #### 介绍
-演示站：`https://www.xfabe.com/YYDS/Love-Code`
+演示站：`http://vr013.com/love/input.html`
 
 #### 软件架构
 软件架构说明
