@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>复刻李峋爱心代码</title>
+    <meta name="keywords" content="复刻李峋爱心,李峋爱心代码,李峋同款爱心代码,爱心代码,李峋爱心代码,爱心">
+    <meta name="description" content="这可是李峋同款爱心代码~">
+    <link rel="shortcut icon" href="https://www.xfabe.com/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body style="background: #000;">
+    <p class="love_you" id="love"></p>
+    <!-- 这里替换音乐 -->
+    <audio src="lovexf.mp3" autoplay="autoplay" loop="loop" controls="controls"></audio>
+    <canvas id="lovexf"></canvas>
+    <div style="display: none;">http://vr013.com/</div>
+    <script src="script.js"></script>
+    <script src="./love.click.js"></script>
+</body>
+<script>
+
+function getQueryParams(url) {
+    const paramArr = url.slice(url.indexOf("?") + 1).split("&");
+    const params = {};
+    paramArr.map((param) => {
+        const [key, val] = param.split("=");
+        params[key] = decodeURIComponent(val);
+    });
+    return params;
+}
+var search = window.location.search;
+let name = getQueryParams(search)
+console.log(name)
+document.getElementById("love").innerHTML=name.name
+</script>
+<script>
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?c86d6693de25dbc83f5b35458e469aa0";
+      var s = document.getElementsByTagName("script")[0]; 
+      s.parentNode.insertBefore(hm, s);
+    })();
+    </script>
+    
+</html>
